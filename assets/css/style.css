@@ -417,6 +417,11 @@ h2 {
 .btn-secondary:hover{
 	background-color: #00486E;
 }
+.btnCenter2{
+	    padding: 20px 0;
+		display: flex;
+		justify-content: center;
+	}
 
 /*fin testing text animation*/
 @media (max-width: 769px) {
