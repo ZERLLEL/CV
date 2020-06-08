@@ -423,7 +423,29 @@ h2 {
 		justify-content: center;
 	}
 
-/*fin testing text animation*/
+/*sprite animation*/
+
+.figure {
+  background-image: url("../img/sprite/sprite.png");
+  width: 260px;
+  height: 192px;
+  animation: walk 2.50s steps(8) infinite;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+.no-svg .figure {
+  background: url("../img/sprite/sprite.png");
+}
+
+@keyframes walk {
+  100% { background-position: 0 -1536px; }
+}
+
+
+
+
+/*fin sprite animation*/
+
 @media (max-width: 769px) {
   p{
     font-size: 2vmin;
